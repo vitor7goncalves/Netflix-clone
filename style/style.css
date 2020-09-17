@@ -134,9 +134,15 @@ a,a:hover{
         height: .8rem;
     }
  }
-
+ @media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 800px),
+ only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    .container{
+        margin: 3rem 0rem;
+    }
+ }
  section .title{
      font-size: 3.125rem;
+     font-family: 'Netflix Sans';
  }
  @media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 800px),
  only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
@@ -171,5 +177,84 @@ section .subtitle{
     left: 15%;
     top: 21%;
     max-width: 70%;
+    z-index: -1;
+}
+@media (min-width: 950px){
+    .mobile{
+        width: 80%;
+        left: 5%;
+    }
+}
+.mobile-card{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: #000;
+    width: 60%;
+    min-width: 15em;
+    padding: .25em .65em;
+    border: 2px solid rgba(255,255,255,.25);
+    box-shadow: 0 0 2em 0 #000;
+    border-radius: .75em;
+}
+
+.mobile-card .card-image img{
+    max-height: 4.5rem;
+}
+.mobile-card h5{
+    font-size: 1rem;
+}
+.mobile-card label{
+    font-size: .9rem;
+    color: #0071eb;
+}
+ 
+.mobile-card .gif img{
+    width: 3rem;
+    
+}
+section .title2{
+    font-size: 3.125rem;
+    font-family: 'Netflix Sans';
+}
+section .subtitle2{
+    font-size: 1.625rem;
+}
+@media only screen and (max-width: 800px) and (min-width: 400px), 
+ only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+    section .title2{
+        position: absolute;
+        top: -320px;
+        left: 150px;
+        font-size: 1.625rem;
+        font-family: 'Netflix Sans';
+    }
+    section .subtitle2{
+        font-size: 1.125rem;
+        position: absolute;
+        top: -250px;
+        left: 80px;
+    }
+    .mobile{
+        position: absolute;
+        bottom: -90px;
+    }
+    .mobile-card .card-image img{
+        max-height: 3rem;
+    }
+    .mobile-card h5{
+        font-size: .9rem;
+    }
+    .mobile-card label{
+        font-size: .75rem;
+    }
+}
+.video-tv2 .our-story-card-video2{
+    position: absolute;
+    width: 57%;
+    left: 22%;
+    top: 12%;
     z-index: -1;
 }
