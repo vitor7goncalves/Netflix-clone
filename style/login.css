@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: normal;
+    font-display: optional;
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2');
+}
+body{
+  font-family: 'Netflix Sans';
+  background-color: #000000;
+}
+header{
+  z-index: 10;
+}
+.logo{
+  max-height: 36px;
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 800px),
+only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+  .logo{
+      max-height: 24px;
+  }
+}
+section{
+  border-bottom: 8px solid #222;
+  height: 100vh;
+}
+
+
+.box-background, .box .content{
+  height: 103.27vh;
+}
+@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 800px),
+only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
+  .box-background, .box .content{
+      height: 75vh;
+  }
+}
+
+
+
+.box .box-background img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.box-background::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.4);
+  background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.8)),color-stop(60%,rgba(0,0,0,0)),to(rgba(0,0,0,.8)));
+  background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+  background-image: -moz- oldlinear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+  background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+  background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+}
+
+
+footer, footer a{
+  margin-top: 3rem;
+  color: #757575;
+}
+footer a{
+  font-size: 13px;
+}
+
+footer select{
+  
+  background-color: #000;
+  background-image: none;
+  border: 1.5px solid #333;
+  color: #999;
+  font-size: 16px;
+  padding: 12px 26px 12px 50px;
+  text-indent: 2px;
+  line-height: 1.7;
+}
+footer img{
+  position: absolute;
+  width: 25px;
+  top: 15px;
+  left: 15px;
+}
+
+footer .marcadgua{
+  font-size: 13px;
+}

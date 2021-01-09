@@ -24,7 +24,8 @@ section{
     border-bottom: 8px solid #222;
 }
 a,a:hover{
-   color: inherit;
+   color: #ffffff;
+   text-decoration: none;
 }
 
 .btn-login{
@@ -32,9 +33,13 @@ a,a:hover{
     color: #ffffff;
     padding: 7px 17px;
     font-weight: 400;
-    font-size: 1rem;
-    border-radius: 3px;
+    font-size: 1.1rem;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
 }
+
 @media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 800px),
  only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
     .btn-login{
@@ -113,6 +118,10 @@ a,a:hover{
     background-color: #e50914;
     border-color: #e50914;
     border-radius: .2rem;
+    cursor: pointer;
+}
+.assine .input-group-text:hover{
+    background-color: #ff0511;
 }
 @media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 800px),
  only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
