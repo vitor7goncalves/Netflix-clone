@@ -1,91 +1,179 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: normal;
     font-display: optional;
     src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2');
 }
-body{
-  font-family: 'Netflix Sans';
-  background-color: #000000;
-}
-header{
-  z-index: 10;
+.login-area{
+ background-color: rgba(0,0,0,.5);
+ width: 100%;
+ height: 110vh;
 }
 .logo{
-  max-height: 36px;
-}
-@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 800px),
-only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
-  .logo{
-      max-height: 24px;
-  }
-}
-section{
-  border-bottom: 8px solid #222;
-  height: 100vh;
-}
-
-
-.box-background, .box .content{
-  height: 103.27vh;
-}
-@media only screen and (max-width: 549px) and (min-width: 400px), only screen and (max-width: 800px),
-only screen and (max-width: 399px) and (min-width: 350px), only screen and (max-width: 349px){
-  .box-background, .box .content{
-      height: 75vh;
-  }
-}
-
-
-
-.box .box-background img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
-.box-background::before{
-  content: '';
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,.4);
-  background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.8)),color-stop(60%,rgba(0,0,0,0)),to(rgba(0,0,0,.8)));
-  background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
-  background-image: -moz- oldlinear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
-  background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
-  background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+  width: 10rem;
+  top: 1.5rem;
+  left: 2.5rem;
+}
+.login-box{
+  position: absolute;
+  top: 13%;
+  left: 33%;
+  background-color: rgba(0,0,0,.8);
+  width: 450px;
+  height: 90%;
+  padding: 70px 0px 0px 70px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #777;
+}
+.login-box h2{
+  color: #ffffff;
+  font-weight: 600;
+}
+.box-1{
+  display: flex;
+  flex-direction: column;
+}
+.enter-value{
+  display: flex;
+  flex-direction: column;
+}
+.box-1 input{
+  width: 80%;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 4px;
+  padding: 0px 20px 0;
+  background-color: #333;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #e87c03;
+  color: #ffffff;
+}
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
+.box-1 button{
+  width: 80%;
+  height: 50px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #e50914;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+.box-2{
+  display: flex;
+}
+#ch{
+  display: none;
+}
 
-footer, footer a{
+.lb{
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgb(196, 194, 194);
+}
+#ch:checked + .lb{
+  background-image: url("d:/Meus Projetos/netflix/img/ch.png");
+  background-position: center;
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.box-2 p{
+  margin: 0px 70px 20px 5px;
+}
+#Fb{
+  color: #757575;
+  background: none;
+  font-size: 13px;
+  border: none;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  margin: 20px 0px 10px 0px;
+}
+#icon{
+  position: absolute;
+  bottom: 200px;
+  width: 20px;
+  height: 20px;
+}
+.buy{
+  color: #ffffff;
+}
+.buy:hover{
+  color: #ffffff;
+}
+.learn-more{
+  width: 80%;
+}
+
+.img-background{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 148.4%;
+  z-index: -1;
+}
+
+#footer{
+  background-color: rgba(0,0,0,.8);
+  padding: 2% 5% 5% 5%;
+  width: 100%;
+  height: 35%;
+}
+
+#footer p{
+  color: #757575;
+}
+
+#footer a{
   margin-top: 3rem;
   color: #757575;
 }
-footer a{
+#footer a{
   font-size: 13px;
 }
 
-footer select{
+#footer select{
   
   background-color: #000;
   background-image: none;
   border: 1.5px solid #333;
   color: #999;
-  font-size: 16px;
-  padding: 12px 26px 12px 50px;
-  text-indent: 2px;
+  font-size: 12px;
+  padding: 12px 20px 12px 40px;
+  text-indent: .1px;
   line-height: 1.7;
 }
-footer img{
+#footer .globo{
   position: absolute;
   width: 25px;
-  top: 15px;
-  left: 15px;
+  top: 12px;
+  left: 10px;
 }
 
-footer .marcadgua{
+#footer .marcadgua{
   font-size: 13px;
 }
