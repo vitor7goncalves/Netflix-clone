@@ -37,6 +37,16 @@
   color: #ffffff;
   font-weight: 600;
 }
+#error-box{
+  width: 80%;
+  height: 13%;
+  background-color: #e87c03;
+  border-radius: 5px;
+}
+#error{
+  color: #ffffff;
+  margin: 5px 5px 5px 10px;
+}
 .box-1{
   display: flex;
   flex-direction: column;

@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style/login.css">
 </head>
+
 <body>
     <div class="bory">
         <div class="login-area">
-              <a href="index.html"> <img class="logo" src="img/logo.svg" alt=""></a>
-              <div class="login-box">
-                  <h2>Entrar</h2>
-                  <div class="box-1">
-                          <label for="username"></label>
-                              <input type="text" id="username" placeholder="Email ou número de telefone">
-                          </label>
-                          <input type="password" placeholder="Senha">
-                      
-                      <button>Entrar</button>
-                  </div>
-                  <div class="box-2">
+            <a href="index.html"> <img class="logo" src="img/logo.svg" alt=""></a>
+            <div class="login-box">
+                <h2>Entrar</h2>
+                <div id="error-box">
+                    <p id="error">
+                        Desculpe, não encontramos uma conta com esse endereço de email.
+                        Tente novamente ou crie um nova conta.
+                    </p>
+                </div>
+                <div class="box-1">
+
+                    <input type="text" id="username" autocomplete="off" placeholder="Email ou número de telefone">
+
+                    <input id="password" type="password" placeholder="Senha">
+
+                    <button onclick="LoginIn()">Entrar</button>
+
+                </div>
+                <div class="box-2">
                     <input id="ch" type="checkbox">
                     <label class="lb" for="ch"></label>
-                      <p> 
-                          Lembre-se de mim 
-                      </p>
-                      <p>Precisa de ajuda?</p>
-                  </div>
-                  <div class="box-3">
+                    <p>
+                        Lembre-se de mim
+                    </p>
+                    <p>Precisa de ajuda?</p>
+                </div>
+                <div class="box-3">
                     <img id="icon" src="img/FB.png" alt="">
                     <button id="Fb">Conectar com Facebook</i></button>
                     <h5>Novo por aqui? <a class="buy" href="">Assine agora.</a></h5>
                     <div class="learn-more">
-                            <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="">Saiba mais</a></div></p>
-                  </div>
+                        <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a
+                                href="">Saiba mais</a>
+                    </div>
+                    </p>
                 </div>
-                <img class="img-background" src="img/bg2.jpg" alt="">
             </div>
-              
-        
-    
+            <img class="img-background" src="img/bg2.jpg" alt="">
+        </div>
+
+
+
         <div id="footer">
-            <div  class="row justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-10">
                     <p>Dúvidas? Ligue 0800-761-4631</p>
 
@@ -56,7 +69,7 @@
                             <a href="">Centro de ajuda</a>
                         </div>
                         <!--divisao-->
-                        
+
                         <div class="col-6 col-md-3 mb-2">
                             <a href="">Termos de uso</a>
                         </div>
@@ -72,24 +85,32 @@
                         </div>
                     </div>
                     <div class="position-relative select-globe mt-4">
-                        
+
                         <img class="globo" src="img/globe.png" alt="">
                         <select>
                             <option>Português</option>
                             <option>English</option>
                         </select>
                     </div>
-               
+
                 </div>
             </div>
         </div>
-   
-     
-    </div> 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e36a0ef3ce.js" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
 </body>
+
 </html>
