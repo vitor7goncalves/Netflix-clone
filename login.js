@@ -1,7 +1,7 @@
 
 document.getElementById('error-box').hidden = true;
 
-function LoginIn() {
+function Login() {
     let email = document.getElementById('username');
     let pass = document.getElementById('password');
 
